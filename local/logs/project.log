@@ -53,3 +53,17 @@
 2018-11-04T11:11:36.043Z - normal: Watching packages
 2018-11-04T11:11:37.044Z - normal: Run Application
 2018-11-04T11:11:38.046Z - success: preview server running at http://localhost:7456
+2018-11-04T11:17:41.360Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:2150
+2018-11-04T11:17:41.362Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:2152
+2018-11-04T11:17:41.363Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:2153
+2018-11-04T11:17:41.363Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:2154
+2018-11-04T11:45:42.312Z - error: animation not added or already removed
+    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:166:16)
+    at AnimationAnimator.p.removeAnimation (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-animator.js:72:20)
+    at AnimationState.proto.onStop (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:107:31)
+    at AnimationState.prototype.stop (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\playable.js:52:22)
+    at AnimationState.process [as _process] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:145:22)
+    at AnimationState.proto.update (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:189:18)
+    at CCClass.update (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-manager.js:28:30)
+    at cc.Scheduler.update (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCScheduler.js:262:38)
+    at cc.Director.mainLoop.CC_EDITOR._purgeDirectorInNextLoop [as mainLoop] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDirector.js:435:41)

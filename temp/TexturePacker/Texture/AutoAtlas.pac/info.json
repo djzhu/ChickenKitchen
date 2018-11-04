@@ -1,0 +1,10 @@
+{
+  "packedTextures": [
+    {
+      "path": "E:\\eclipse_cocos\\ChickenKitchen\\temp\\TexturePacker\\Texture\\AutoAtlas.pac\\AutoAtlas-1.png",
+      "name": "AutoAtlas-1.png",
+      "size": "512x512"
+    }
+  ],
+  "unpackedTextures": []
+}

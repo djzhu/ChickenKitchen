@@ -261,8 +261,8 @@
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
     "asset": 1541322674621,
-    "meta": 1541322674640,
-    "relativePath": "Scene\\helloworld.fire"
+    "meta": 1541332543505,
+    "relativePath": "Scene\\main.fire"
   },
   "e4f31a57-85c8-4402-bd71-68dbc0dd8d3e": {
     "asset": 1541306462801,
@@ -693,5 +693,20 @@
     "asset": 1527561123524,
     "meta": 1541321889711,
     "relativePath": "Texture\\角色\\role_01.png"
+  },
+  "8cae0c4a-b4a5-43b0-8966-f55ec61c5fab": {
+    "asset": 1541332456170,
+    "meta": 1541332456188,
+    "relativePath": "Animation\\anim_register.anim"
+  },
+  "e1904bd1-c0f4-45f8-8020-1b006663d3b4": {
+    "asset": 1541331887798,
+    "meta": 1541331916560,
+    "relativePath": "~$厨房 light.docx"
+  },
+  "df8ffa75-079e-4c8b-b6a9-83566924fd24": {
+    "asset": 1541332110413,
+    "meta": 1541332515955,
+    "relativePath": "Texture\\AutoAtlas.pac"
   }
 }
