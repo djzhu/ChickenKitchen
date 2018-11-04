@@ -1,80 +1,55 @@
-2018-11-04T11:01:28.088Z - normal: Load ~/.CocosCreator/settings.json
-2018-11-04T11:01:28.092Z - normal: checking language setting...
-2018-11-04T11:01:28.092Z - normal: Language: zh
-2018-11-04T11:01:29.922Z - success: protocol editor-framework registered
-2018-11-04T11:01:29.922Z - success: protocol app registered
-2018-11-04T11:01:29.922Z - success: protocol theme registered
-2018-11-04T11:01:29.922Z - success: protocol packages registered
-2018-11-04T11:01:29.922Z - success: protocol unpack registerred
-2018-11-04T11:01:29.923Z - success: protocol disable-commonjs registerred
-2018-11-04T11:01:30.318Z - normal: connected!
-2018-11-04T11:01:30.329Z - normal: Check project E:\eclipse_cocos\ChickenKitchen
-2018-11-04T11:01:30.345Z - normal: Initializing project E:\eclipse_cocos\ChickenKitchen
-2018-11-04T11:01:30.357Z - normal: Initializing Cocos2d
-2018-11-04T11:01:31.207Z - normal: Initializing Asset Database
-2018-11-04T11:01:31.265Z - success: protocol uuid registerred
-2018-11-04T11:01:31.265Z - success: protocol db registerred
-2018-11-04T11:01:31.265Z - success: protocol thumbnail registerred
-2018-11-04T11:01:31.265Z - normal: Loading editor/builtin packages
-2018-11-04T11:01:31.456Z - success: assets loaded
-2018-11-04T11:01:31.458Z - success: builder loaded
-2018-11-04T11:01:31.462Z - success: cocos-analytics loaded
-2018-11-04T11:01:31.465Z - success: console loaded
-2018-11-04T11:01:31.506Z - success: fb-instant-games loaded
-2018-11-04T11:01:31.511Z - success: hierarchy loaded
-2018-11-04T11:01:31.514Z - success: inspector loaded
-2018-11-04T11:01:31.516Z - success: keystore loaded
-2018-11-04T11:01:31.520Z - success: node-library loaded
-2018-11-04T11:01:31.522Z - success: package-asset loaded
-2018-11-04T11:01:31.523Z - success: preferences loaded
-2018-11-04T11:01:31.525Z - success: project-exporter loaded
-2018-11-04T11:01:31.544Z - success: project-importer loaded
-2018-11-04T11:01:31.547Z - success: project-settings loaded
-2018-11-04T11:01:31.551Z - success: ui-kit loaded
-2018-11-04T11:01:31.554Z - success: scene loaded
-2018-11-04T11:01:31.555Z - success: sprite-editor loaded
-2018-11-04T11:01:31.559Z - success: store loaded
-2018-11-04T11:01:31.563Z - success: timeline loaded
-2018-11-04T11:01:31.563Z - normal: Loading builtin packages
-2018-11-04T11:01:31.570Z - success: asset-db-debugger loaded
-2018-11-04T11:01:31.572Z - success: code-editor loaded
-2018-11-04T11:01:31.573Z - success: color-picker loaded
-2018-11-04T11:01:31.574Z - success: jsb-adapter loaded
-2018-11-04T11:01:31.579Z - success: package-manager loaded
-2018-11-04T11:01:31.702Z - success: qqplay-adapter loaded
-2018-11-04T11:01:31.708Z - success: sdkbox loaded
-2018-11-04T11:01:31.714Z - success: tester loaded
-2018-11-04T11:01:31.717Z - success: ui-grid loaded
-2018-11-04T11:01:31.719Z - success: ui-kit-preview-extra loaded
-2018-11-04T11:01:31.721Z - success: ui-kit-preview loaded
-2018-11-04T11:01:31.724Z - success: ui-tree loaded
-2018-11-04T11:01:31.725Z - success: weapp-adapter loaded
-2018-11-04T11:01:33.191Z - normal: Loading packages
-2018-11-04T11:01:33.199Z - normal: Watching packages
-2018-11-04T11:01:34.359Z - normal: Run Application
-2018-11-04T11:01:35.359Z - success: preview server running at http://localhost:7456
-2018-11-04T11:01:41.537Z - error: Failed to remove menu in path: 开发者/UI Preview/ui-tree (could not be found)
-    at a.remove (C:\CocosCreator\resources\app.asar\editor-framework\lib\main\menu.js:1:2693)
-    at Object.e.remove (C:\CocosCreator\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4106)
-    at r.series.n (C:\CocosCreator\resources\app.asar\editor-framework\lib\main\package.js:1:4460)
-    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:718:13
-    at Immediate.iterate (C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:262:13)
-    at runCallback (timers.js:672:20)
-    at tryOnImmediate (timers.js:645:5)
-    at processImmediate [as _immediateCallback] (timers.js:617:5)
-2018-11-04T11:01:41.537Z - success: ui-tree unloaded
-2018-11-04T11:01:41.539Z - error: Failed to remove menu in path: 开发者/UI Preview/ui-tree (could not be found)
-    at a.remove (C:\CocosCreator\resources\app.asar\editor-framework\lib\main\menu.js:1:2693)
-    at Object.e.remove (C:\CocosCreator\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4106)
-    at r.series.n (C:\CocosCreator\resources\app.asar\editor-framework\lib\main\package.js:1:4460)
-    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:718:13
-    at Immediate.iterate (C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:262:13)
-    at runCallback (timers.js:672:20)
-    at tryOnImmediate (timers.js:645:5)
-    at processImmediate [as _immediateCallback] (timers.js:617:5)
-2018-11-04T11:01:41.539Z - failed: Failed to uncache module main.js: Cannot find it.
-2018-11-04T11:01:41.539Z - success: ui-tree unloaded
-2018-11-04T11:01:41.550Z - failed: Failed to load panel "panel.preview" from "ui-tree", the panelID ui-tree.preview already exists
-2018-11-04T11:01:41.551Z - success: ui-tree loaded
-2018-11-04T11:01:41.552Z - success: ui-tree loaded
-2018-11-04T11:02:33.924Z - info: shutdown preview server
+2018-11-04T11:11:30.930Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-04T11:11:30.934Z - normal: checking language setting...
+2018-11-04T11:11:30.934Z - normal: Language: zh
+2018-11-04T11:11:32.840Z - success: protocol editor-framework registered
+2018-11-04T11:11:32.840Z - success: protocol app registered
+2018-11-04T11:11:32.840Z - success: protocol theme registered
+2018-11-04T11:11:32.840Z - success: protocol packages registered
+2018-11-04T11:11:32.840Z - success: protocol unpack registerred
+2018-11-04T11:11:32.840Z - success: protocol disable-commonjs registerred
+2018-11-04T11:11:33.199Z - normal: connected!
+2018-11-04T11:11:33.207Z - normal: Check project E:\eclipse_cocos\ChickenKitchen
+2018-11-04T11:11:33.218Z - normal: Initializing project E:\eclipse_cocos\ChickenKitchen
+2018-11-04T11:11:33.224Z - normal: Initializing Cocos2d
+2018-11-04T11:11:34.082Z - normal: Initializing Asset Database
+2018-11-04T11:11:34.139Z - success: protocol uuid registerred
+2018-11-04T11:11:34.139Z - success: protocol db registerred
+2018-11-04T11:11:34.139Z - success: protocol thumbnail registerred
+2018-11-04T11:11:34.140Z - normal: Loading editor/builtin packages
+2018-11-04T11:11:34.334Z - success: assets loaded
+2018-11-04T11:11:34.336Z - success: builder loaded
+2018-11-04T11:11:34.340Z - success: cocos-analytics loaded
+2018-11-04T11:11:34.343Z - success: console loaded
+2018-11-04T11:11:34.382Z - success: fb-instant-games loaded
+2018-11-04T11:11:34.388Z - success: hierarchy loaded
+2018-11-04T11:11:34.390Z - success: inspector loaded
+2018-11-04T11:11:34.392Z - success: keystore loaded
+2018-11-04T11:11:34.397Z - success: node-library loaded
+2018-11-04T11:11:34.399Z - success: package-asset loaded
+2018-11-04T11:11:34.400Z - success: preferences loaded
+2018-11-04T11:11:34.402Z - success: project-exporter loaded
+2018-11-04T11:11:34.421Z - success: project-importer loaded
+2018-11-04T11:11:34.423Z - success: project-settings loaded
+2018-11-04T11:11:34.427Z - success: ui-kit loaded
+2018-11-04T11:11:34.430Z - success: scene loaded
+2018-11-04T11:11:34.432Z - success: sprite-editor loaded
+2018-11-04T11:11:34.436Z - success: store loaded
+2018-11-04T11:11:34.440Z - success: timeline loaded
+2018-11-04T11:11:34.440Z - normal: Loading builtin packages
+2018-11-04T11:11:34.446Z - success: asset-db-debugger loaded
+2018-11-04T11:11:34.448Z - success: code-editor loaded
+2018-11-04T11:11:34.449Z - success: color-picker loaded
+2018-11-04T11:11:34.450Z - success: jsb-adapter loaded
+2018-11-04T11:11:34.454Z - success: package-manager loaded
+2018-11-04T11:11:34.578Z - success: qqplay-adapter loaded
+2018-11-04T11:11:34.584Z - success: sdkbox loaded
+2018-11-04T11:11:34.590Z - success: tester loaded
+2018-11-04T11:11:34.592Z - success: ui-grid loaded
+2018-11-04T11:11:34.595Z - success: ui-kit-preview-extra loaded
+2018-11-04T11:11:34.598Z - success: ui-kit-preview loaded
+2018-11-04T11:11:34.600Z - success: ui-tree loaded
+2018-11-04T11:11:34.600Z - success: weapp-adapter loaded
+2018-11-04T11:11:36.035Z - normal: Loading packages
+2018-11-04T11:11:36.043Z - normal: Watching packages
+2018-11-04T11:11:37.044Z - normal: Run Application
+2018-11-04T11:11:38.046Z - success: preview server running at http://localhost:7456
