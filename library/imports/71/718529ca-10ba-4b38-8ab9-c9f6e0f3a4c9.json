@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "q_fuxk",
+    "texture": "cbc732eb-d695-4eec-9e4f-b0bdb13738ed",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      15,
+      15
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      15,
+      15
+    ]
+  }
+}

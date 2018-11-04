@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "register_sheep_L",
+    "texture": "bf82fe51-1ab5-41f5-8eb9-70c1c44d0d91",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      27,
+      30
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      27,
+      30
+    ]
+  }
+}

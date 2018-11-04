@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "score_board_bar_02",
+    "texture": "28c7bad1-899c-4895-aff9-fa7febbc52df",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      68,
+      18
+    ],
+    "offset": [
+      1,
+      0
+    ],
+    "originalSize": [
+      70,
+      18
+    ]
+  }
+}

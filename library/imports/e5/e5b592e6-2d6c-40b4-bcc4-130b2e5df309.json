@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sc_street",
+    "texture": "c3b6f7b0-b85d-4239-b32a-e6852b1a831f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      144,
+      122
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      144,
+      122
+    ]
+  }
+}

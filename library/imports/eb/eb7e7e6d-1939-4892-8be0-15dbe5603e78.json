@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sc_counter",
+    "texture": "944721ad-2aea-45d9-bed4-7f838c35459c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      144,
+      63
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      144,
+      63
+    ]
+  }
+}

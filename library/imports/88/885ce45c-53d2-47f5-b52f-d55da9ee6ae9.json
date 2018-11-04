@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cpt_rabbit_button",
+    "texture": "87524b9e-6ddb-48cd-a5ba-96d1a3e25105",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      36,
+      29
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      36,
+      29
+    ]
+  }
+}

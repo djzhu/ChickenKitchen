@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cpt_rabbit_idol",
+    "texture": "1f9fa39b-a60c-48db-ac17-2a497d4ba26a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      49,
+      60
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      49,
+      60
+    ]
+  }
+}

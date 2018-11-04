@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "chief_yeah",
+    "texture": "722adb18-2afa-4eb9-82e4-edfafe20a587",
+    "atlas": "",
+    "rect": [
+      2,
+      1,
+      36,
+      38
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      40,
+      39
+    ]
+  }
+}

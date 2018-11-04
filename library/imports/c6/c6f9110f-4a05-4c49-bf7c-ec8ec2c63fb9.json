@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "time_bar",
+    "texture": "dd600402-9020-4d94-aeb1-985846f8545e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      69,
+      23
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      69,
+      23
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sc_kitchen_floor",
+    "texture": "aaf0b69b-2eeb-43e0-9786-97831229c3d8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      144,
+      26
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      144,
+      26
+    ]
+  }
+}

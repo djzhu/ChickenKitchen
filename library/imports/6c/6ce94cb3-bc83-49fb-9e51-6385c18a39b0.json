@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "chief_ado",
+    "texture": "b36068a8-11f3-43f0-b578-8c7431cc1a13",
+    "atlas": "",
+    "rect": [
+      10,
+      1,
+      26,
+      38
+    ],
+    "offset": [
+      3,
+      -0.5
+    ],
+    "originalSize": [
+      40,
+      39
+    ]
+  }
+}

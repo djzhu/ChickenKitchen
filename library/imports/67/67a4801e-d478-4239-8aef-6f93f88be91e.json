@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "chief_idol",
+    "texture": "185c5057-0c91-43f9-969d-ebf968372a54",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      29,
+      38
+    ],
+    "offset": [
+      -4.5,
+      -0.5
+    ],
+    "originalSize": [
+      40,
+      39
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "register_02",
+    "texture": "3db312bb-294c-43af-9738-f5c7006e10a6",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      16,
+      26
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      18,
+      27
+    ]
+  }
+}
