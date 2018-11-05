@@ -245,7 +245,7 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1541313653725,
+    "asset": 1541332543499,
     "meta": 1541313653725,
     "relativePath": "Scene"
   },
@@ -254,14 +254,9 @@
     "meta": 1541313653725,
     "relativePath": "Script"
   },
-  "280c3aec-6492-4a9d-9f51-a9b00b570b4a": {
-    "asset": 1541313653725,
-    "meta": 1541313661762,
-    "relativePath": "Script\\HelloWorld.js"
-  },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1541322674621,
-    "meta": 1541332543505,
+    "asset": 1541428435937,
+    "meta": 1541428435950,
     "relativePath": "Scene\\main.fire"
   },
   "e4f31a57-85c8-4402-bd71-68dbc0dd8d3e": {
@@ -275,7 +270,7 @@
     "relativePath": "小鸡厨房 light.docx"
   },
   "807acfce-8851-43dc-bf05-0aacae548c8e": {
-    "asset": 1541315533478,
+    "asset": 1541332213670,
     "meta": 1541315513644,
     "relativePath": "Texture"
   },
@@ -600,7 +595,7 @@
     "relativePath": "Texture\\字体素材 1234567890KGTM\\M.png"
   },
   "34344b45-a052-4ca8-b5bc-7785f5173a05": {
-    "asset": 1541321887795,
+    "asset": 1541332213670,
     "meta": 1541314092561,
     "relativePath": "Texture\\角色"
   },
@@ -699,14 +694,34 @@
     "meta": 1541332456188,
     "relativePath": "Animation\\anim_register.anim"
   },
-  "e1904bd1-c0f4-45f8-8020-1b006663d3b4": {
-    "asset": 1541331887798,
-    "meta": 1541331916560,
-    "relativePath": "~$厨房 light.docx"
-  },
   "df8ffa75-079e-4c8b-b6a9-83566924fd24": {
     "asset": 1541332110413,
     "meta": 1541332515955,
     "relativePath": "Texture\\AutoAtlas.pac"
+  },
+  "19e2a5ff-94f7-4637-8299-d58f5d55bed5": {
+    "asset": 1541332312986,
+    "meta": 1541330261372,
+    "relativePath": "Animation"
+  },
+  "aa3a7ee6-e170-49ea-8997-b86a49f0713a": {
+    "asset": 1541415290033,
+    "meta": 1541415290037,
+    "relativePath": "Script\\Util"
+  },
+  "b43f56b1-2ff4-443b-a80c-bc4d50eb75eb": {
+    "asset": 1541428398611,
+    "meta": 1541428403345,
+    "relativePath": "Script\\Util\\Util_Number.js"
+  },
+  "f6e92d06-0095-4c88-b352-654a17a6f696": {
+    "asset": 1541428353544,
+    "meta": 1541428403346,
+    "relativePath": "Script\\Util\\Util_Timer.js"
+  },
+  "ce17ddc8-8a07-40b5-8926-d2a0a8e77e01": {
+    "asset": 1541428503828,
+    "meta": 1541428506661,
+    "relativePath": "Script\\GameManager.js"
   }
 }
