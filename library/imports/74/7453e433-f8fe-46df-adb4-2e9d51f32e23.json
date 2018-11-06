@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "anim_chief_lost",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "67a4801e-d478-4239-8aef-6f93f88be91e"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "5534f2a2-572b-4f08-8f9f-83d50043fbb3"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "67a4801e-d478-4239-8aef-6f93f88be91e"
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__uuid__": "5534f2a2-572b-4f08-8f9f-83d50043fbb3"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "67a4801e-d478-4239-8aef-6f93f88be91e"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

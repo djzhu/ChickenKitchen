@@ -3,7 +3,7 @@
   "_name": "anim_register",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 1.0166666666666666,
+  "_duration": 0.5166666666666667,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -18,21 +18,21 @@
             }
           },
           {
-            "frame": 0.3333333333333333,
+            "frame": 0.16666666666666666,
             "value": {
               "__uuid__": "b71cab0b-cc97-4619-91fc-05f705a63c2e"
             }
           },
           {
-            "frame": 0.6666666666666666,
+            "frame": 0.3333333333333333,
             "value": {
               "__uuid__": "ecb334f3-ec0e-4270-a3d4-5bed4f8951ba"
             }
           },
           {
-            "frame": 1,
+            "frame": 0.5,
             "value": {
-              "__uuid__": "6ff61fc7-813d-4574-8cad-40320e7388ba"
+              "__uuid__": "b0107dda-d549-48f9-bdeb-c62766fdbd86"
             }
           }
         ]

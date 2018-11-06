@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'f6e920GAJVMiLNSZUoXpvaW', 'Util_Timer');
-// Script/Util/Util_Timer.js
+cc._RF.push(module, 'f6e920GAJVMiLNSZUoXpvaW', 'UI_Timer');
+// Script/UI/UI_Timer.js
 
 "use strict";
 
@@ -11,7 +11,7 @@ cc.Class({
 		barSpriteNode: cc.Node
 	},
 
-	start: function start() {
+	onLoad: function onLoad() {
 		this.originX = this.barSpriteNode.x;
 		this.originW = this.barSpriteNode.width;
 		this.currentRate = 1;

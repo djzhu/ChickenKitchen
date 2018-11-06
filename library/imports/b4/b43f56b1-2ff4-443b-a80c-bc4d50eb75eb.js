@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'b43f5axL/REO6gMvE1Q63Xr', 'Util_Number');
-// Script/Util/Util_Number.js
+cc._RF.push(module, 'b43f5axL/REO6gMvE1Q63Xr', 'UI_Number');
+// Script/UI/UI_Number.js
 
 "use strict";
 
@@ -12,7 +12,7 @@ cc.Class({
 		numberSpriteFrames: [] // 0-9 spriteFrame
 	},
 
-	start: function start() {
+	onLoad: function onLoad() {
 		var count = 10;
 		this.numberSprites = new Array(count);
 		this.numberSpriteFrames = new Array(count);

@@ -250,13 +250,13 @@
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1541313653725,
+    "asset": 1541428506652,
     "meta": 1541313653725,
     "relativePath": "Script"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1541428435937,
-    "meta": 1541428435950,
+    "asset": 1541514574218,
+    "meta": 1541514574231,
     "relativePath": "Scene\\main.fire"
   },
   "e4f31a57-85c8-4402-bd71-68dbc0dd8d3e": {
@@ -353,11 +353,6 @@
     "asset": 1530197535677,
     "meta": 1541315513986,
     "relativePath": "Texture\\UI\\register_02.png"
-  },
-  "e7e68893-75c4-4531-a86d-f380385d39bb": {
-    "asset": 1530197535677,
-    "meta": 1541315513997,
-    "relativePath": "Texture\\UI\\register_04.png"
   },
   "d5ec06a1-716f-446e-b4db-8a4629572a42": {
     "asset": 1530197535677,
@@ -690,8 +685,8 @@
     "relativePath": "Texture\\角色\\role_01.png"
   },
   "8cae0c4a-b4a5-43b0-8966-f55ec61c5fab": {
-    "asset": 1541332456170,
-    "meta": 1541332456188,
+    "asset": 1541510361543,
+    "meta": 1541510361581,
     "relativePath": "Animation\\anim_register.anim"
   },
   "df8ffa75-079e-4c8b-b6a9-83566924fd24": {
@@ -705,23 +700,103 @@
     "relativePath": "Animation"
   },
   "aa3a7ee6-e170-49ea-8997-b86a49f0713a": {
-    "asset": 1541415290033,
+    "asset": 1541427517283,
     "meta": 1541415290037,
-    "relativePath": "Script\\Util"
+    "relativePath": "Script\\UI"
   },
-  "b43f56b1-2ff4-443b-a80c-bc4d50eb75eb": {
-    "asset": 1541428398611,
-    "meta": 1541428403345,
-    "relativePath": "Script\\Util\\Util_Number.js"
+  "73ee661a-3386-408b-82a8-70b579b64ed0": {
+    "asset": 1541487743987,
+    "meta": 1541487743989,
+    "relativePath": "Script\\Game"
+  },
+  "073dc08d-39a8-4b56-bba8-d84a63fa5b4d": {
+    "asset": 1541489627070,
+    "meta": 1541489693475,
+    "relativePath": "Script\\Study.js"
+  },
+  "64c391d7-b250-4680-9035-036cc943a662": {
+    "asset": 1541511625222,
+    "meta": 1541511625241,
+    "relativePath": "Animation\\anim_chief_cooking.anim"
+  },
+  "ddd6713f-34bc-445f-abe7-7cd9b5ea6fd6": {
+    "asset": 1541511887996,
+    "meta": 1541511888005,
+    "relativePath": "Animation\\anim_chief_win.anim"
+  },
+  "7453e433-f8fe-46df-adb4-2e9d51f32e23": {
+    "asset": 1541511881740,
+    "meta": 1541511881749,
+    "relativePath": "Animation\\anim_chief_lost.anim"
+  },
+  "9a419b4c-bfc3-4194-a93b-d9fbb16551c9": {
+    "asset": 1541511292492,
+    "meta": 1541511306151,
+    "relativePath": "Script\\Game\\Game_Bubble.js"
+  },
+  "81b1fb4c-f3e9-4124-9328-2538c1b0a486": {
+    "asset": 1541511296669,
+    "meta": 1541511306201,
+    "relativePath": "Script\\Game\\Game_Customer.js"
   },
   "f6e92d06-0095-4c88-b352-654a17a6f696": {
-    "asset": 1541428353544,
-    "meta": 1541428403346,
-    "relativePath": "Script\\Util\\Util_Timer.js"
+    "asset": 1541511247361,
+    "meta": 1541511306288,
+    "relativePath": "Script\\UI\\UI_Timer.js"
+  },
+  "b43f56b1-2ff4-443b-a80c-bc4d50eb75eb": {
+    "asset": 1541511421497,
+    "meta": 1541511423186,
+    "relativePath": "Script\\UI\\UI_Number.js"
+  },
+  "10a589b5-3bef-49c1-b111-c2cf5920b482": {
+    "asset": 1541513895485,
+    "meta": 1541513895479,
+    "relativePath": "Texture\\CountDown"
+  },
+  "7497272d-027e-4048-8aa0-27d7d08b0e45": {
+    "asset": 1541513863837,
+    "meta": 1541513895547,
+    "relativePath": "Texture\\CountDown\\1.png"
+  },
+  "64c4d1db-3757-4ec6-992f-4d81745cd206": {
+    "asset": 1541513852515,
+    "meta": 1541513895550,
+    "relativePath": "Texture\\CountDown\\2.png"
+  },
+  "8a8e16a0-fa26-4109-b263-f35a445a7fef": {
+    "asset": 1541513836397,
+    "meta": 1541513895578,
+    "relativePath": "Texture\\CountDown\\3.png"
+  },
+  "c7f9288d-7922-4d57-9c19-a7a90a08fe24": {
+    "asset": 1541513802457,
+    "meta": 1541513895580,
+    "relativePath": "Texture\\CountDown\\go.png"
+  },
+  "48ee2dee-1de2-48d6-9740-952d28d29326": {
+    "asset": 1541514552553,
+    "meta": 1541514552564,
+    "relativePath": "Animation\\anim_countdown_shrink.anim"
+  },
+  "93869fc7-9f57-430a-a46a-1759d3a69477": {
+    "asset": 1541514503361,
+    "meta": 1541514510229,
+    "relativePath": "Script\\UI\\UI_CountDown.js"
+  },
+  "e4d8c478-0cf4-4bb1-afbe-82a44c6f2a3e": {
+    "asset": 1541514627859,
+    "meta": 1541514958697,
+    "relativePath": "Script\\Game\\Game_CustomerManager.js"
+  },
+  "01bb5e3a-f8e3-4128-8361-c61a9385e75b": {
+    "asset": 1541515198380,
+    "meta": 1541515366964,
+    "relativePath": "Script\\Game\\Game_Play.js"
   },
   "ce17ddc8-8a07-40b5-8926-d2a0a8e77e01": {
-    "asset": 1541428503828,
-    "meta": 1541428506661,
+    "asset": 1541515686894,
+    "meta": 1541515842935,
     "relativePath": "Script\\GameManager.js"
   }
 }
