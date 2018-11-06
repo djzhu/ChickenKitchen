@@ -31623,3 +31623,4 @@ libpng warning: iCCP: known incorrect sRGB profile
     at emitMany (events.js:127:13)
     at EventEmitter.emit (events.js:204:7)
 2018-11-06T14:50:42.753Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/~$厨房 light.docx.meta
+2018-11-06T14:51:25.268Z - info: shutdown preview server
