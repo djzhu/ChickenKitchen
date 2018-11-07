@@ -3,7 +3,7 @@
   "uuid": "aaf0b69b-2eeb-43e0-9786-97831229c3d8",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
   "premultiplyAlpha": false,
   "subMetas": {
     "sc_kitchen_floor": {

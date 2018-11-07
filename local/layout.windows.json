@@ -20,7 +20,7 @@
                 ],
                 "height": 400,
                 "type": "panel",
-                "width": 233
+                "width": 252
               },
               {
                 "active": 0,
@@ -29,12 +29,12 @@
                 ],
                 "height": 385,
                 "type": "panel",
-                "width": 233
+                "width": 252
               }
             ],
             "height": 788,
             "type": "dock-v",
-            "width": 233
+            "width": 252
           },
           {
             "children": [
@@ -47,7 +47,7 @@
                     ],
                     "height": 297,
                     "type": "panel",
-                    "width": 543.984375
+                    "width": 531.984375
                   },
                   {
                     "active": 0,
@@ -56,12 +56,12 @@
                     ],
                     "height": 297,
                     "type": "panel",
-                    "width": 301
+                    "width": 294
                   }
                 ],
                 "height": 297,
                 "type": "dock-h",
-                "width": 848
+                "width": 828.984375
               },
               {
                 "active": 0,
@@ -71,12 +71,12 @@
                 ],
                 "height": 488,
                 "type": "panel",
-                "width": 848
+                "width": 828.984375
               }
             ],
             "height": 788,
             "type": "dock-v",
-            "width": 848
+            "width": 828.984375
           },
           {
             "active": 0,
@@ -94,10 +94,10 @@
         "hierarchy",
         "node-library",
         "console",
+        "timeline",
         "inspector",
         "assets",
-        "scene",
-        "timeline"
+        "scene"
       ]
     }
   },
@@ -125,6 +125,12 @@
       "y": 447,
       "width": 520,
       "height": 339
+    },
+    "sprite-editor": {
+      "x": 462,
+      "y": 170,
+      "width": 516,
+      "height": 539
     }
   }
 }

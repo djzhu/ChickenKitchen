@@ -31,40 +31,26 @@ cc.Class({
 		//this.initCunstomer();
 	},
 
-	// 随机取一个客户
-	getRandomCustomer() {
-		let rd = parseInt(Math.random() * this.customer.length);
-		let node = cc.instantiate(this.customer[rd]);
-		node.active = true;
-		node.parent = this.node;
-		node.setSiblingIndex(0);
-		return node;
-	},
-
-	// 向前移动一个位置
-	moveForward() {
-		for (var i = 0; i < this.currentCustomer.length; i++) {
-			let customer = this.currentCustomer[i].getComponent("Game_Customer");
-			let index = i;
-			this.scheduleOnce(() => {
-				customer.moveTo(this.moveTime, this.lineUpPos[index].x, this.lineUpPos[index].y, () => { });
-			}, i * 0.3);
+	// 移动速度
+	setSpeed(speed) {
+		if (speed > 0) {
+			this.moveTime = 1 / speed;
 		}
 	},
 
 	// 初始化顾客
-	initCunstomer() {
+	initCunstomer(onFinish) {
 		this.currentCustomer = new Array(6); // 当前队列上的顾客
 		for (var i = 0; i < this.currentCustomer.length; i++) {
 			this.currentCustomer[i] = this.getRandomCustomer();
 			this.currentCustomer[i].getComponent("Game_Customer").setTo(this.lineUpPos[i + 1].x, this.lineUpPos[i + 1].y);
 		}
 		// 往前移动
-		this.moveForward();
+		this.moveForward(onFinish);
 	},
 
-	// 一个顾客离开
-	satisfyCustomer(moodLevel) {
+	// 一个顾客离开 moodLevel: 0愤怒 1平静 2开心
+	satisfyCustomer(moodLevel, onFinish) {
 		// 添加mood
 		this.bubble.active = true;
 		this.bubble.getComponent("Game_Bubble").setMood(moodLevel);
@@ -88,7 +74,7 @@ cc.Class({
 		this.currentCustomer[i] = this.getRandomCustomer();
 		this.currentCustomer[i].getComponent("Game_Customer").setTo(this.lineUpPos[i + 1].x, this.lineUpPos[i + 1].y);
 		// 往前移动
-		this.moveForward();
+		this.moveForward(onFinish);
 
 		// 得分
 		if (moodLevel == 2) {
@@ -97,6 +83,31 @@ cc.Class({
 			return parseInt(customer.gold * 0.7);
 		} else {
 			return 0;
+		}
+	},
+
+	// 随机取一个客户
+	getRandomCustomer() {
+		let rd = parseInt(Math.random() * this.customer.length);
+		let node = cc.instantiate(this.customer[rd]);
+		node.active = true;
+		node.parent = this.node;
+		node.setSiblingIndex(0);
+		return node;
+	},
+
+	// 向前移动一个位置
+	moveForward(onFinish) {
+		for (var i = 0; i < this.currentCustomer.length; i++) {
+			let customer = this.currentCustomer[i].getComponent("Game_Customer");
+			let index = i;
+			this.scheduleOnce(() => {
+				customer.moveTo(this.moveTime, this.lineUpPos[index].x, this.lineUpPos[index].y, () => {
+					if (index == this.currentCustomer.length - 1) {
+						onFinish();
+					}
+				});
+			}, i * 0.3);
 		}
 	},
 

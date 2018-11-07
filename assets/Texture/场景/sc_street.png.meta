@@ -3,7 +3,7 @@
   "uuid": "c3b6f7b0-b85d-4239-b32a-e6852b1a831f",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
   "premultiplyAlpha": false,
   "subMetas": {
     "sc_street": {

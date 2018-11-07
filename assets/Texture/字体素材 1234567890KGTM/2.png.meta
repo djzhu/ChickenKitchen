@@ -3,7 +3,7 @@
   "uuid": "ee541e25-5e23-46b7-9efd-4b0e398fdaba",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
   "premultiplyAlpha": false,
   "subMetas": {
     "2": {

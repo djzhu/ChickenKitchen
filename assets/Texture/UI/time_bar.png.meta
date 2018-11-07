@@ -3,7 +3,7 @@
   "uuid": "dd600402-9020-4d94-aeb1-985846f8545e",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
   "premultiplyAlpha": false,
   "subMetas": {
     "time_bar": {

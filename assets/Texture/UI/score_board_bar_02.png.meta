@@ -3,7 +3,7 @@
   "uuid": "28c7bad1-899c-4895-aff9-fa7febbc52df",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
   "premultiplyAlpha": false,
   "subMetas": {
     "score_board_bar_02": {

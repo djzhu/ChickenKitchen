@@ -3,7 +3,7 @@
   "uuid": "e4e5960c-b63e-4d32-8984-57a87c5197e8",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
   "premultiplyAlpha": false,
   "subMetas": {
     "cpt_rabbit_04": {

@@ -37,7 +37,7 @@ cc.Class({
 	update: function update(dt) {
 		if (this.countDownIndex >= 0) {
 			this.timer += dt;
-			if (this.timer >= 1) {
+			if (this.timer >= 0.5) {
 				this.timer = 0;
 
 				this.countDownNode[this.countDownIndex].active = false;

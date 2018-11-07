@@ -37,50 +37,29 @@ cc.Class({
 	},
 
 
-	// 随机取一个客户
-	getRandomCustomer: function getRandomCustomer() {
-		var rd = parseInt(Math.random() * this.customer.length);
-		var node = cc.instantiate(this.customer[rd]);
-		node.active = true;
-		node.parent = this.node;
-		node.setSiblingIndex(0);
-		return node;
-	},
-
-
-	// 向前移动一个位置
-	moveForward: function moveForward() {
-		var _this = this;
-
-		var _loop = function _loop() {
-			var customer = _this.currentCustomer[i].getComponent("Game_Customer");
-			var index = i;
-			_this.scheduleOnce(function () {
-				customer.moveTo(_this.moveTime, _this.lineUpPos[index].x, _this.lineUpPos[index].y, function () {});
-			}, i * 0.3);
-		};
-
-		for (var i = 0; i < this.currentCustomer.length; i++) {
-			_loop();
+	// 移动速度
+	setSpeed: function setSpeed(speed) {
+		if (speed > 0) {
+			this.moveTime = 1 / speed;
 		}
 	},
 
 
 	// 初始化顾客
-	initCunstomer: function initCunstomer() {
+	initCunstomer: function initCunstomer(onFinish) {
 		this.currentCustomer = new Array(6); // 当前队列上的顾客
 		for (var i = 0; i < this.currentCustomer.length; i++) {
 			this.currentCustomer[i] = this.getRandomCustomer();
 			this.currentCustomer[i].getComponent("Game_Customer").setTo(this.lineUpPos[i + 1].x, this.lineUpPos[i + 1].y);
 		}
 		// 往前移动
-		this.moveForward();
+		this.moveForward(onFinish);
 	},
 
 
-	// 一个顾客离开
-	satisfyCustomer: function satisfyCustomer(moodLevel) {
-		var _this2 = this;
+	// 一个顾客离开 moodLevel: 0愤怒 1平静 2开心
+	satisfyCustomer: function satisfyCustomer(moodLevel, onFinish) {
+		var _this = this;
 
 		// 添加mood
 		this.bubble.active = true;
@@ -94,7 +73,7 @@ cc.Class({
 			var bubbleNode = customer.node.getChildByName("add_bubble");
 			if (bubbleNode != null) {
 				// 下一个顾客提前把气泡拿走使用了，上一个顾客销毁时就不需要处理气泡了
-				bubbleNode.parent = _this2.node;
+				bubbleNode.parent = _this.node;
 				bubbleNode.active = false;
 			}
 			customer.node.destroy();
@@ -106,7 +85,7 @@ cc.Class({
 		this.currentCustomer[i] = this.getRandomCustomer();
 		this.currentCustomer[i].getComponent("Game_Customer").setTo(this.lineUpPos[i + 1].x, this.lineUpPos[i + 1].y);
 		// 往前移动
-		this.moveForward();
+		this.moveForward(onFinish);
 
 		// 得分
 		if (moodLevel == 2) {
@@ -115,6 +94,39 @@ cc.Class({
 			return parseInt(customer.gold * 0.7);
 		} else {
 			return 0;
+		}
+	},
+
+
+	// 随机取一个客户
+	getRandomCustomer: function getRandomCustomer() {
+		var rd = parseInt(Math.random() * this.customer.length);
+		var node = cc.instantiate(this.customer[rd]);
+		node.active = true;
+		node.parent = this.node;
+		node.setSiblingIndex(0);
+		return node;
+	},
+
+
+	// 向前移动一个位置
+	moveForward: function moveForward(onFinish) {
+		var _this2 = this;
+
+		var _loop = function _loop() {
+			var customer = _this2.currentCustomer[i].getComponent("Game_Customer");
+			var index = i;
+			_this2.scheduleOnce(function () {
+				customer.moveTo(_this2.moveTime, _this2.lineUpPos[index].x, _this2.lineUpPos[index].y, function () {
+					if (index == _this2.currentCustomer.length - 1) {
+						onFinish();
+					}
+				});
+			}, i * 0.3);
+		};
+
+		for (var i = 0; i < this.currentCustomer.length; i++) {
+			_loop();
 		}
 	}
 }
