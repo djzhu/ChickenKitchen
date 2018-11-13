@@ -255,8 +255,8 @@
     "relativePath": "Script"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1541605262128,
-    "meta": 1541605262146,
+    "asset": 1542099141728,
+    "meta": 1542099141751,
     "relativePath": "Scene\\main.fire"
   },
   "e4f31a57-85c8-4402-bd71-68dbc0dd8d3e": {
@@ -705,8 +705,8 @@
     "relativePath": "Script\\Game"
   },
   "073dc08d-39a8-4b56-bba8-d84a63fa5b4d": {
-    "asset": 1541489627070,
-    "meta": 1541489693475,
+    "asset": 1541683565107,
+    "meta": 1542090699724,
     "relativePath": "Script\\Study.js"
   },
   "64c391d7-b250-4680-9035-036cc943a662": {
@@ -733,16 +733,6 @@
     "asset": 1541511296669,
     "meta": 1541511306201,
     "relativePath": "Script\\Game\\Game_Customer.js"
-  },
-  "f6e92d06-0095-4c88-b352-654a17a6f696": {
-    "asset": 1541511247361,
-    "meta": 1541511306288,
-    "relativePath": "Script\\UI\\UI_Timer.js"
-  },
-  "b43f56b1-2ff4-443b-a80c-bc4d50eb75eb": {
-    "asset": 1541511421497,
-    "meta": 1541511423186,
-    "relativePath": "Script\\UI\\UI_Number.js"
   },
   "10a589b5-3bef-49c1-b111-c2cf5920b482": {
     "asset": 1541513895485,
@@ -774,11 +764,6 @@
     "meta": 1541559717781,
     "relativePath": "Texture\\CountDown\\go.png"
   },
-  "5d518cfb-5f28-497f-bee1-10171c24c927": {
-    "asset": 1541585245018,
-    "meta": 1541585248654,
-    "relativePath": "Script\\Game\\Game_PlayModePress.js"
-  },
   "0db0f4af-6922-4cef-950b-b06e961bb37c": {
     "asset": 1541586805243,
     "meta": 1541586818049,
@@ -788,11 +773,6 @@
     "asset": 1541593316205,
     "meta": 1541604160577,
     "relativePath": "Texture\\UI\\button_c_02.png"
-  },
-  "e832b487-6ef6-4f70-8a0f-5e32a6437b9c": {
-    "asset": 1541594752910,
-    "meta": 1541594813754,
-    "relativePath": "Script\\Game\\Game_PlayModeTouch.js"
   },
   "93869fc7-9f57-430a-a46a-1759d3a69477": {
     "asset": 1541595533668,
@@ -804,19 +784,54 @@
     "meta": 1541602727166,
     "relativePath": "Script\\Game\\Game_Play.js"
   },
+  "afd8531b-86b4-4f2b-981a-ed3e87f701ef": {
+    "asset": 1542095071646,
+    "meta": 1542095071662,
+    "relativePath": "Animation\\anim_rabbit_cheer.anim"
+  },
+  "0012679c-2fb6-4743-a07c-7f2914440463": {
+    "asset": 1542092641383,
+    "meta": 1542092641405,
+    "relativePath": "Animation\\anim_rabbit_breath.anim"
+  },
+  "5d518cfb-5f28-497f-bee1-10171c24c927": {
+    "asset": 1542094661951,
+    "meta": 1542094673712,
+    "relativePath": "Script\\Game\\Game_PlayModePress.js"
+  },
+  "e832b487-6ef6-4f70-8a0f-5e32a6437b9c": {
+    "asset": 1542094604889,
+    "meta": 1542094673713,
+    "relativePath": "Script\\Game\\Game_PlayModeTouch.js"
+  },
   "e4d8c478-0cf4-4bb1-afbe-82a44c6f2a3e": {
-    "asset": 1541602969465,
-    "meta": 1541602987494,
+    "asset": 1542095994885,
+    "meta": 1542096021100,
     "relativePath": "Script\\Game\\Game_CustomerManager.js"
   },
-  "ce17ddc8-8a07-40b5-8926-d2a0a8e77e01": {
-    "asset": 1541605583183,
-    "meta": 1541605585029,
-    "relativePath": "Script\\GameManager.js"
+  "f6e92d06-0095-4c88-b352-654a17a6f696": {
+    "asset": 1542096169265,
+    "meta": 1542096221498,
+    "relativePath": "Script\\UI\\UI_Timer.js"
+  },
+  "de1b2229-f636-47ad-92e8-1711e4476b26": {
+    "asset": 1542096974851,
+    "meta": 1542097070291,
+    "relativePath": "Script\\UI\\UI_Rabbit.js"
+  },
+  "b43f56b1-2ff4-443b-a80c-bc4d50eb75eb": {
+    "asset": 1542098549103,
+    "meta": 1542098550930,
+    "relativePath": "Script\\UI\\UI_Number.js"
   },
   "fb9947bc-83db-4403-8606-f659df2269f4": {
-    "asset": 1541605559991,
-    "meta": 1541605585030,
+    "asset": 1542098980409,
+    "meta": 1542098986160,
     "relativePath": "Script\\UI\\UI_Settlement.js"
+  },
+  "ce17ddc8-8a07-40b5-8926-d2a0a8e77e01": {
+    "asset": 1542099588038,
+    "meta": 1542099594395,
+    "relativePath": "Script\\GameManager.js"
   }
 }

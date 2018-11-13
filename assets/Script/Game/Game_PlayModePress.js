@@ -12,23 +12,27 @@ cc.Class({
 
 		this.spr_filler = this.node.getChildByName("filler").getComponent(cc.Sprite);
 
-		this.node.on(cc.Node.EventType.TOUCH_START, (event) => {
-			this.down = true;
-			this.limit = 0;
-		}, this);
+		this.node.on(cc.Node.EventType.TOUCH_START, this.onDown, this);
+		this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onDown, this);
 
-		this.node.on(cc.Node.EventType.TOUCH_END, (event) => {
-			this.down = false;
-			if (this.value > 0.9){
-				this.finish(2);
-			} else if (this.value > 0.7){
-				this.finish(1);
-			} else {
-				this.finish(0);
-			}
-		}, this);
+		this.node.on(cc.Node.EventType.TOUCH_END, this.onUp, this);
+		this.node.on(cc.Node.EventType.MOUSE_UP, this.onUp, this);
 
 		this.node.active = false;
+	},
+	onDown(event) {
+		this.down = true;
+		this.limit = 0;
+	},
+	onUp(event) {
+		this.down = false;
+		if (this.value > 0.9) {
+			this.finish(2);
+		} else if (this.value > 0.7) {
+			this.finish(1);
+		} else {
+			this.finish(0);
+		}
 	},
 
 	init(onFinish) {

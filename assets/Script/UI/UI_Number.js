@@ -24,6 +24,17 @@ cc.Class({
 
 	// 直接设置一个数字
 	setNumber(number) {
+		this.targetNumber = number;
+		this.updateNumber(number);
+	},
+
+	// 从当前数字跳动变化到目标数字
+	rollNumber(number) {
+		this.targetNumber = number;
+	},
+
+	// 更新数字
+	updateNumber(number) {
 		number = parseInt(number);
 		this.currentNumber = number;
 
@@ -52,11 +63,6 @@ cc.Class({
 		}
 	},
 
-	// 从当前数字跳动变化到目标数字
-	rollNumber(number) {
-		this.targetNumber = number;
-	},
-
 	update(dt) {
 		if (this.currentNumber != this.targetNumber) {
 			var number = this.currentNumber * 0.9 + this.targetNumber * 0.1;
@@ -65,7 +71,7 @@ cc.Class({
 			} else if (this.currentNumber > this.targetNumber && number > this.currentNumber - 1) {
 				number = this.currentNumber - 1;
 			}
-			this.setNumber(number);
+			this.updateNumber(number);
 		}
 	},
 

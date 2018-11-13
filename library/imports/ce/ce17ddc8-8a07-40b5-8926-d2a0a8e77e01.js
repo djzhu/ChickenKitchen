@@ -4,12 +4,16 @@ cc._RF.push(module, 'ce17d3IigdAtYkm0qCo534B', 'GameManager');
 
 "use strict";
 
-cc.Class({
+var GameManager = cc.Class({
 	extends: cc.Component,
 
+	statics: {
+		instance: null
+	},
 	properties: {},
 
 	onLoad: function onLoad() {
+		GameManager.instance = this;
 		cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
 	},
 	onDestroy: function onDestroy() {
@@ -20,15 +24,21 @@ cc.Class({
 
 		this.gold = 0;
 		//
+		this.cheerTime = false;
+		//
 		this.com_customerManager = cc.find("Canvas/Customer").getComponent("Game_CustomerManager");
 		this.com_countDown = cc.find("Canvas/UI/ui_countDown").getComponent("UI_CountDown");
 		this.com_timeBar = cc.find("Canvas/UI/ui_timeBar").getComponent("UI_Timer");
-		this.com_scoreBar = cc.find("Canvas/UI/ui_scoreBar").getComponent("UI_Number");
+		this.com_scoreBar = cc.find("Canvas/UI/ui_goldBar").getComponent("UI_Number");
 		this.com_play = cc.find("Canvas/UI/ui_play").getComponent("Game_Play");
+		this.com_rabbit = cc.find("Canvas/UI/ui_rabbit").getComponent("UI_Rabbit");
 		this.com_settlement = cc.find("Canvas/UI/ui_settlement").getComponent("UI_Settlement");
 		//
 		this.anim_chief = cc.find("Canvas/ch_chief").getComponent(cc.Animation);
 		this.anim_register = cc.find("Canvas/add_register").getComponent(cc.Animation);
+
+		//
+		this.com_settlement.node.active = false;
 
 		// 游戏正常速度
 		this.setGameSpeed(1);
@@ -37,7 +47,21 @@ cc.Class({
 		// 3 2 1 go
 		this.com_countDown.startCountDown(function () {
 			// 走时间
-			_this.com_timeBar.init(150, _this.onTimeOver);
+			var self = _this;
+			_this.com_timeBar.init(150, function () {
+				self.setGameSpeed(0);
+				self.com_settlement.node.active = true;
+				self.com_settlement.init(self.gold, function () {
+					_this.com_settlement.node.active = false;
+					_this.setGameSpeed(1);
+					_this.com_timeBar.init(50, function () {
+						self.setGameSpeed(0);
+						self.com_settlement.node.active = true;
+						self.com_settlement.init(self.gold, null);
+					});
+					_this.cooking();
+				});
+			});
 			// 初始化金币
 			_this.com_scoreBar.setNumber(_this.gold);
 			// 开始
@@ -49,20 +73,25 @@ cc.Class({
 	// 游戏开始
 	//startGame() { },
 
+	// 触发cheer time
+	startCheerTime: function startCheerTime() {
+		cc.log("start cheer time");
+		this.cheerTime = true;
+		this.setGameSpeed(4);
+	},
+
+	// 结束cheer time
+	endCheerTime: function endCheerTime() {
+		cc.log("end cheer time");
+		this.cheerTime = false;
+		this.setGameSpeed(1);
+	},
+
+
 	// 游戏速度
 	setGameSpeed: function setGameSpeed(speed) {
 		this.gameSpeed = speed;
 		this.com_customerManager.setSpeed(speed);
-	},
-
-
-	// 时间结束
-	onTimeOver: function onTimeOver() {
-		cc.log("Time Over!!");
-		this.setGameSpeed(0);
-		this.com_settlement.init(this.gold, function () {
-			cc.log("onContinue......");
-		});
 	},
 
 
@@ -91,15 +120,26 @@ cc.Class({
 
 		// 烧菜
 		this.anim_chief.play("anim_chief_cooking"); // 厨师烧菜动画 loop
-		// 互动
-		this.com_play.playAction(function (result) {
-			if (result == 0) {
-				_this3.anim_chief.play("anim_chief_lost"); // 厨师失败动画
-			} else {
-				_this3.anim_chief.play("anim_chief_win"); // 厨师胜利动画
-			}
-			_this3.moveUp(result);
-		});
+		// 拉拉兔时间
+		if (this.cheerTime) {
+			this.anim_chief.play("anim_chief_win"); // 厨师胜利动画
+			var result = 2;
+			this.moveUp(result);
+		} else {
+			// 互动
+			this.com_play.playAction(function (result) {
+				if (result == 0) {
+					_this3.anim_chief.play("anim_chief_lost"); // 厨师失败动画
+				} else {
+					_this3.anim_chief.play("anim_chief_win"); // 厨师胜利动画
+					if (result == 2) {
+						// 拉拉兔计数
+						_this3.com_rabbit.onGoodService();
+					}
+				}
+				_this3.moveUp(result);
+			});
+		}
 	},
 	update: function update(dt) {},
 	onKeyDown: function onKeyDown(event) {

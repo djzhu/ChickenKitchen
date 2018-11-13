@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "anim_rabbit_cheer",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "72ab03f1-29da-4503-8003-ee618f5bbe7f"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "41dc875d-1267-4a09-a8b7-1037bc506673"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "f067844c-cf31-4451-b8cb-302a3bf7ff89"
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__uuid__": "0ae4359d-1ca9-48e3-9e2a-1a265125927d"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "72ab03f1-29da-4503-8003-ee618f5bbe7f"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

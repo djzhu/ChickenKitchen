@@ -10,31 +10,33 @@ cc.Class({
 	properties: {},
 
 	onLoad: function onLoad() {
-		var _this = this;
-
 		this.down = false;
 		this.value = 0;
 		this.limit = 0; // 操作限时
 
 		this.spr_filler = this.node.getChildByName("filler").getComponent(cc.Sprite);
 
-		this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-			_this.down = true;
-			_this.limit = 0;
-		}, this);
+		this.node.on(cc.Node.EventType.TOUCH_START, this.onDown, this);
+		this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onDown, this);
 
-		this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
-			_this.down = false;
-			if (_this.value > 0.9) {
-				_this.finish(2);
-			} else if (_this.value > 0.7) {
-				_this.finish(1);
-			} else {
-				_this.finish(0);
-			}
-		}, this);
+		this.node.on(cc.Node.EventType.TOUCH_END, this.onUp, this);
+		this.node.on(cc.Node.EventType.MOUSE_UP, this.onUp, this);
 
 		this.node.active = false;
+	},
+	onDown: function onDown(event) {
+		this.down = true;
+		this.limit = 0;
+	},
+	onUp: function onUp(event) {
+		this.down = false;
+		if (this.value > 0.9) {
+			this.finish(2);
+		} else if (this.value > 0.7) {
+			this.finish(1);
+		} else {
+			this.finish(0);
+		}
 	},
 	init: function init(onFinish) {
 		this.onFinish = onFinish;

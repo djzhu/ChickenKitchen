@@ -7,11 +7,10 @@ cc._RF.push(module, 'f6e920GAJVMiLNSZUoXpvaW', 'UI_Timer', __filename);
 cc.Class({
 	extends: cc.Component,
 
-	properties: {
-		barSpriteNode: cc.Node
-	},
+	properties: {},
 
 	onLoad: function onLoad() {
+		this.barSpriteNode = this.node.getChildByName("ui_bar");
 		this.originX = this.barSpriteNode.x;
 		this.originW = this.barSpriteNode.width;
 		this.currentRate = 1;

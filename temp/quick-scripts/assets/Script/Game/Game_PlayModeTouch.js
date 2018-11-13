@@ -16,6 +16,7 @@ cc.Class({
 		this.limit = 0; // 操作限时
 
 		this.node.on(cc.Node.EventType.TOUCH_START, this.onClick, this);
+		this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onClick, this);
 
 		this.pointer = this.node.getChildByName("pointer");
 		this.pointer.rotation = 0;

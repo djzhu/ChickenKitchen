@@ -3,10 +3,10 @@ cc.Class({
 	extends: cc.Component,
 
 	properties: {
-		barSpriteNode: cc.Node,
 	},
 
 	onLoad() {
+		this.barSpriteNode = this.node.getChildByName("ui_bar");
 		this.originX = this.barSpriteNode.x;
 		this.originW = this.barSpriteNode.width;
 		this.currentRate = 1;
@@ -23,10 +23,10 @@ cc.Class({
 	setRate(rate) {
 		this.currentRate = rate;
 		this.barSpriteNode.width = this.originW * rate;
-		this.barSpriteNode.x = this.originX - (this.originW - this.barSpriteNode.width)*0.5;
+		this.barSpriteNode.x = this.originX - (this.originW - this.barSpriteNode.width) * 0.5;
 	},
 
-	update (dt) {
+	update(dt) {
 		if (this.time > 0) {
 			this.time -= dt;
 			if (this.time >= 0) {
