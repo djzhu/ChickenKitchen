@@ -13,7 +13,25 @@
   ],
   "design-resolution-height": 256,
   "design-resolution-width": 144,
-  "excluded-modules": [],
+  "excluded-modules": [
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "PageView",
+    "PageViewIndicator",
+    "EditBox",
+    "VideoPlayer",
+    "Audio",
+    "AudioSource",
+    "Collider",
+    "Physics"
+  ],
   "fit-height": false,
   "fit-width": true,
   "group-list": [
@@ -25,6 +43,5 @@
     "width": 960
   },
   "use-customize-simulator": false,
-  "use-project-simulator-setting": false,
-  "start-scene": "current"
+  "use-project-simulator-setting": false
 }
